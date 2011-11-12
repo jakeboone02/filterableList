@@ -1,7 +1,7 @@
 /**
  * jQuery Filterable List Plugin
- * Adapted from jQuery Mobile list filter
- * Author: Jake Boone
+ * Adapted from jQuery Mobile list filter by Jake Boone
+ * https://github.com/jakeboone02/filterableList
  * Released with MIT License: http://www.opensource.org/licenses/mit-license.php
  */
 (function( $ ) {
