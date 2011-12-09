@@ -1,0 +1,24 @@
+{
+  "name": "filterableList",
+  "version": "0.1",
+  "title": "jQuery Filterable List Plugin",
+  "author": {
+    "name": "Jake Boone"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "http://www.opensource.org/licenses/mit-license.php"
+    }
+  ],
+  "dependencies": {
+    "jquery": ">=1.7"
+  },
+  "description": "jQuery plugin to add an auto-filter input box to the top of a list.",
+  "homepage": "https://github.com/jakeboone02/filterableList",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/jakeboone02/filterableList.git"
+  },
+  "files": ["./jquery.filterableList.js"]
+}
