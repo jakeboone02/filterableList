@@ -5,18 +5,18 @@ Released with MIT License: http://www.opensource.org/licenses/mit-license.php
 
 jQuery extention to add an auto-filter text box to the top of a list.
 
-Usage:
+Basic usage:
 
     $("ul.filterable").filterableList();
     
-    or w/ options
+With options:
     
     $("ul.filterable").filterableList({
         placeholder: "Filter items...",
         hiddenClass: "hide"
     });
 
-Options:
+Available options:
 
     placeholder
         Placeholder for the input textbox
