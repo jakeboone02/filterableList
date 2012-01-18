@@ -1,9 +1,13 @@
 jQuery Filterable List Plugin
-Adapted from jQuery Mobile list filter by Jake Boone
-https://github.com/jakeboone02/filterableList
-Released with MIT License: http://www.opensource.org/licenses/mit-license.php
-
+-----------------------------
 jQuery extention to add an auto-filter text box to the top of a list.
+
+(Adapted from [jQuery Mobile](http://jquerymobile.com) list filter by Jake Boone)
+
+https://github.com/jakeboone02/filterableList
+
+Released with MIT License: http://www.opensource.org/licenses/mit-license.php
+___
 
 Basic usage:
 
