@@ -1,1 +1,122 @@
-jQuery Filterable List Plugin
+<html>
+<head>
+<title>jQuery Filterable List Plugin</title>
+<style>
+.hidden { display: none; }
+.red { color: red; font-weight: bold; }
+
+html, body { margin: 20px; }
+pre, code { background: #DDD; }
+pre { padding: 1.5em; }
+</style>
+<script src="http://code.jquery.com/jquery-1.7.min.js"></script>
+<script src="https://raw.github.com/jakeboone02/filterableList/master/jquery.filterableList.min.js"></script>
+<script>
+$(function() {
+    $( "ul.filterable" ).filterableList();
+    $( "ul.paintable" ).filterableList({ hiddenClass: "red", placeholder: "Paint the town red..." });
+});
+</script>
+</head>
+<body>
+<h1>jQuery Filterable List Plugin</h1>
+<a href="https://github.com/jakeboone02/filterableList">https://github.com/jakeboone02/filterableList</a>
+<hr>
+<h2>Initialization</h2>
+CSS
+<pre><code>.hidden { display: none; }
+.red { color: red; font-weight: bold; }
+</code></pre>
+JavaScript
+<pre><code>$(function() {
+    $( "ul.filterable" ).filterableList();
+    $( "ul.paintable" ).filterableList({ hiddenClass: "red", placeholder: "Paint the town red..." });
+});
+</code></pre>
+<hr>
+<h2>Basic</h2>
+<table width="100%">
+<thead><tr><th>Example</th><th>Markup</th></tr></thead>
+<tbody>
+<tr valign=top><td width="50%">
+Search for "Test" or "this", etc.
+<ul class="filterable">
+    <li>Test</li>
+    <li>this</li>
+    <li>bad</li>
+    <li>boy</li>
+    <li>out</li>
+</ul>
+</td>
+<td width="50%">
+<pre><code>&lt;ul class="filterable"&gt;
+    &lt;li&gt;Test&lt;/li&gt;
+    &lt;li&gt;this&lt;/li&gt;
+    &lt;li&gt;bad&lt;/li&gt;
+    &lt;li&gt;boy&lt;/li&gt;
+    &lt;li&gt;out&lt;/li&gt;
+&lt;/ul&gt;
+</code></pre>
+</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h2>Data filter</h2>
+<table width="100%">
+<thead><tr><th>Example</th><th>Markup</th></tr></thead>
+<tbody>
+<tr valign=top><td width="50%">
+Add <code>data-filtertext</code> to your list items to filter by that instead of the inner text.  In this example, search for "you" or "won't", etc.
+<ul class="filterable">
+    <li data-filtertext="You">Test</li>
+    <li data-filtertext="won't">this</li>
+    <li data-filtertext="believe">bad</li>
+    <li data-filtertext="your">boy</li>
+    <li data-filtertext="eyes">out</li>
+</ul>
+</td>
+<td width="50%">
+<pre><code>&lt;ul class="filterable"&gt;
+    &lt;li data-filtertext="You"&gt;Test&lt;/li&gt;
+    &lt;li data-filtertext="won't"&gt;this&lt;/li&gt;
+    &lt;li data-filtertext="believe"&gt;bad&lt;/li&gt;
+    &lt;li data-filtertext="your"&gt;boy&lt;/li&gt;
+    &lt;li data-filtertext="eyes"&gt;out&lt;/li&gt;
+&lt;/ul&gt;
+</code></pre>
+</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h2>Options</h2>
+<table width="100%">
+<thead><tr><th>Example</th><th>Markup</th></tr></thead>
+<tbody>
+<tr valign=top><td width="50%">
+Options <code>placeholder</code> and <code>filterClass</code> take effect here.
+<ul class="paintable">
+    <li>Anything</li>
+    <li>that</li>
+    <li>doesn't</li>
+    <li>match</li>
+    <li>will turn red.</li>
+</ul>
+</td>
+<td width="50%">
+<pre><code>&lt;ul class="paintable"&gt;
+    &lt;li data-filtertext="You"&gt;Test&lt;/li&gt;
+    &lt;li data-filtertext="won't"&gt;this&lt;/li&gt;
+    &lt;li data-filtertext="believe"&gt;bad&lt;/li&gt;
+    &lt;li data-filtertext="your"&gt;boy&lt;/li&gt;
+    &lt;li data-filtertext="eyes"&gt;out&lt;/li&gt;
+&lt;/ul&gt;
+</code></pre>
+</td>
+</tr>
+</tbody>
+</table>
+<div style="margin-top:2em;text-align:center;"><small>&copy; 2012 Jake Boone</small></div>
+</body>
+</html>
