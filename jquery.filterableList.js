@@ -31,10 +31,10 @@ $.fn.filterableList = function( options ) {
         var list = $(this);
         var wrapper = $( "<form>" ),
             search = $( "<input>", {
-                placeholder: settings.placeholder
+                placeholder: settings.placeholder,
+                "class": settings.filterBoxClass,
+                data: {"lastval": ""}
             })
-            .addClass( settings.filterBoxClass )
-            .data( "lastval", "" )
             .on( "keyup.filterablelist change.filterablelist", function() {
 
                 var $this = $(this),
